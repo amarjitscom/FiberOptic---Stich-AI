@@ -2,7 +2,7 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import { StitchResult } from "../types";
 
-const ai = new GoogleGenAI({ apiKey: GEMINI_API_KEY });
+const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_KEY });
 
 export const analyzeStitchPattern = async (base64Image: string, mimeType: string): Promise<StitchResult> => {
   const model = 'gemini-3-flash-preview';
