@@ -5,7 +5,7 @@ import { StitchResult } from "../types";
 const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_KEY });
 
 export const analyzeStitchPattern = async (base64Image: string, mimeType: string): Promise<StitchResult> => {
-  const model = 'gemini-3-flash-preview';
+  const model = 'gemini-1.5-flash';
 
   const prompt = `You are an expert fiber artist and pattern designer. Analyze the provided image of a crochet or knitting work-in-progress (WIP).
 
