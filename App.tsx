@@ -55,6 +55,8 @@ const App: React.FC = () => {
   }, []);
 
   return (
+    <>
+    <h1>Testing</h1>
     <div className="min-h-screen bg-[#fefcfb] selection:bg-pink-100 selection:text-pink-600 flex flex-col items-center justify-center p-6 sm:p-12 overflow-x-hidden">
       {/* Decorative Background Elements */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none opacity-20">
@@ -164,6 +166,7 @@ const App: React.FC = () => {
         <p className="text-[10px] text-center mt-4 text-indigo-300 font-bold uppercase tracking-[0.4em]">Designed for creators</p>
       </motion.div>
     </div>
+        </>
   );
 };
 
