@@ -11,6 +11,8 @@ if (!rootElement) {
 const root = ReactDOM.createRoot(rootElement);
 root.render(
   <React.StrictMode>
+    <h1>Testing </h1>
+    { process.env.GEMINI_API_KEY}
     <App />
   </React.StrictMode>
 );
